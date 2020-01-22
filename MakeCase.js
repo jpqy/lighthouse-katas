@@ -58,7 +58,6 @@ const capitalizeFirstLetter = function (word) {
     word[i] = word[i].toLowerCase();
   }
   return word = word.join('');
-
 }
 
 const makeCamel = function (wordArray) {
@@ -77,28 +76,29 @@ const makePascal = function (wordArray) {
   return wordArray.map(word => capitalizeFirstLetter(word));
 }
 
-// Function to capitalize all vowels (or consonants if consonant flag is set to true)
+// Function to capitalize all vowels (or consonants if consonant flag is set to true) in a word array
 const capitalizeVowels = function (wordArray, consonants) {
-  const vowels = ['a', 'e', 'i', 'o', 'u','A','E','I','O','U'];
-  
-  // Split each word into array of letters
-  wordArray.forEach((word, i) => {
-    wordArray[i] = wordArray[i].split('');
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
-    // Capitalize letter if it is a vowel and consonant flag is false, or it is not a vowel and
+  // Go through each word and split each word into array of letters
+  let newWordArray = wordArray.map((word) => {
+    let letters = word.split('');
+
+    // Capitalize letter if it is a vowel and consonant flag is false, or is not a vowel and
     // consonant flag is true. Otherwise, lowercase the letter.
-    wordArray[i].forEach((letter, j) => {
+    let newLetters = letters.map((letter) => {
       if (vowels.includes(letter) && !consonants) {
-        wordArray[i][j] = letter.toUpperCase();
+        letter = letter.toUpperCase();
       } else if (!vowels.includes(letter) && consonants) {
-        wordArray[i][j] = letter.toUpperCase();
+        letter = letter.toUpperCase();
       } else {
-        wordArray[i][j] = letter.toLowerCase();
+        letter = letter.toLowerCase();
       }
+      return letter;
     });
-    wordArray[i] = wordArray[i].join('');
+    return newLetters.join('');
   });
-  return wordArray;
+  return newWordArray;
 }
 
 console.log(makeCase("this is a string", "camel"));

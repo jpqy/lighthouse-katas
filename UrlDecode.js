@@ -1,3 +1,4 @@
+// Function to take key-value pairs from URL and decode them into a dictionary object
 const urlDecode = function (text) {
   let paramObject = {};
 

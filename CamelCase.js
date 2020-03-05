@@ -1,7 +1,7 @@
-let camelCase = function (input) {
+let camelCase = function(input) {
 
   // Split input into array of words using space
-  result = input.split(' ');
+  let result = input.split(' ');
 
   // Starting from 2nd word, split each into array of letters, capitalize first letter, and turn back into string
   for (let i = 1; i < result.length; i++) {

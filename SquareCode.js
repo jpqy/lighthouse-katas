@@ -1,5 +1,5 @@
 // Function to turn string into a columnar representation if it were made into a square
-const squareCode = function (message) {
+const squareCode = function(message) {
   let code = '';
 
   // Remove space from message

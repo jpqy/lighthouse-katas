@@ -1,4 +1,4 @@
-const generateBoard = function (whiteQueen, blackQueen) {
+const generateBoard = function(whiteQueen, blackQueen) {
   // Generate 8x8 array of 0's
   let board = [
     [0, 0, 0, 0, 0, 0, 0, 0],
@@ -17,13 +17,13 @@ const generateBoard = function (whiteQueen, blackQueen) {
   return board;
 };
 
-const queenThreat = function (board) {
+const queenThreat = function(board) {
   // Obtain coordinates of the two queens and put into array of coordinates
   let queenPos = [];
   board.forEach((row, r) => {
     row.forEach((column, c) => {
       if (column === 1) {
-        queenPos.push([r, c])
+        queenPos.push([r, c]);
       }
     });
   });

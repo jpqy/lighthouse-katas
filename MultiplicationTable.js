@@ -1,5 +1,5 @@
-const multiplicationTable = function (maxValue) {
-  table = "";
+const multiplicationTable = function(maxValue) {
+  let table = "";
 
   // Create two loops for row and column up to max value
   for (let r = 1; r <= maxValue; r++) {

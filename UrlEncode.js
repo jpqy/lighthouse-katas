@@ -1,4 +1,4 @@
-const urlEncode = function (text) {
+const urlEncode = function(text) {
   let replacement = "";
 
   // Go through each character, appending %20 to replacement string if it's a space, or appending character if not

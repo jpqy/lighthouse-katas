@@ -1,4 +1,4 @@
-const organizeInstructors = function (instructors) {
+const organizeInstructors = function(instructors) {
   // Make new dictionary with keys as courses and values as array of instructor names
   let courses = {};
 

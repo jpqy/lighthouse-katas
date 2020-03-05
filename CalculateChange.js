@@ -1,4 +1,4 @@
-let calculateChange = function (total, cash) {
+let calculateChange = function(total, cash) {
   let changeObject = {};
 
   // Make denominations dictionary with name and values, starting from highest value
@@ -19,7 +19,7 @@ let calculateChange = function (total, cash) {
   denominations.forEach(denomination => {
     let quotient = Math.floor(change / denomination.value);
 
-    // If quotient is not 0, add denomation and quotient into the "change" object to be returned 
+    // If quotient is not 0, add denomation and quotient into the "change" object to be returned
     if (quotient > 0) {
       changeObject[denomination.name] = quotient;
       change -= quotient * denomination.value;

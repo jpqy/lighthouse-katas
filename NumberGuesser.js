@@ -13,12 +13,11 @@ while (true) {
   let answer = prompt("Guess a number (1-100): ");
   answer = parseInt(answer);
   if (isNaN(answer)) {
-    console.log("Not a number! Try again!")
+    console.log("Not a number! Try again!");
   } else if (guessed.includes(answer)) {
     console.log("Already guessed!");
-  }
-  else if (answer < secret) {
-    console.log("Too low!")
+  } else if (answer < secret) {
+    console.log("Too low!");
     tries++;
     guessed.push(answer);
   } else if (answer > secret) {
@@ -30,4 +29,4 @@ while (true) {
     console.log("You got it! You took " + tries + " attempts!");
     break;
   }
-}; 
+}

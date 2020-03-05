@@ -1,4 +1,4 @@
-let numberOfVowels = function (data) {
+let numberOfVowels = function(data) {
   let counter = 0;
   let vowels = ["a", "e", "i", "o", "u"]; // Create vowels array to match for vowels later
   let dataArray = data.split(''); // Split string into array of letters

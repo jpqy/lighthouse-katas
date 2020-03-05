@@ -1,4 +1,4 @@
-let repeatNumbers = function (data) {
+let repeatNumbers = function(data) {
   let result = "";
 
   // Go through each datum and repeat first element by number of times specified by second element
@@ -8,7 +8,7 @@ let repeatNumbers = function (data) {
     }
 
     // Add comma if it's not the last datum
-    if (index != data.length-1) {
+    if (index !== data.length - 1) {
       result += ", ";
     }
   });

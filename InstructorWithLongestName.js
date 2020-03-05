@@ -1,5 +1,5 @@
-const instructorWithLongestName = function (instructors) {
-  indexOfLongest = 0; // Keep track of index of instructor with longest name
+const instructorWithLongestName = function(instructors) {
+  let indexOfLongest = 0; // Keep track of index of instructor with longest name
 
   // Go through instructors and assign indexOfLongest to current index if current index's name is longer
   instructors.forEach((instructor, index) => {
